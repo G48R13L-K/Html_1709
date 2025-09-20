@@ -1,8 +1,18 @@
-const form = document.getElementById('login');
-form.addEventListener("submit",(event) => {
-    event.preventDefault();
-    console.log("submit",event)
-    const email = document.getElementById('#email').value
-    const password = document.getElementById('#password').value
-    console.log(email)
-    console.log(password)})
+const form = document.querySelector("form")
+
+  
+form.addEventListener("submit",(event)=>{
+    event.preventDefault()
+    
+    const email = document.querySelector("#email").value
+    const password = document.querySelector("#password").value
+    
+    console.log(password,"password")
+    if(email != "" && password != ""){
+       //alert("login efetuado com sucesso!")
+        localStorage.setItem("user",email)
+        window.location.href = "/"
+    }else{
+        alert("login inválido")
+    }
+})

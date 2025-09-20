@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+button {
+    padding: 5px;
+    cursor: pointer;
+     border-radius: 12px;
+    background-color: #5a3838;
+    border: none;
+    color: #dedddd;
+}
+
