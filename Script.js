@@ -9,6 +9,7 @@ function logout(){
     const logoutBtn = document.querySelector("button")
     logoutBtn.addEventListener("click",()=>{
         localStorage.removeItem("user")
+        email.innerText = ""
         window.location.href = "/Login/"
     })
 }
